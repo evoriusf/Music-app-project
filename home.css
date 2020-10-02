@@ -1,0 +1,220 @@
+body{
+  background:linear-gradient(to bottom,#39254D , #000c02);
+  font-family: sans-serif;
+}
+.brand{
+  text-decoration: none;
+
+  background-color: transparent; 
+  color: white;
+  font-size: 56px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  letter-spacing: 2px;
+  display: flex;
+  text-align: left;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.logo{
+  margin-right: 25px;
+  margin-top: 15px;
+
+}
+h2{
+  text-decoration: none;
+  background-color: transparent; 
+  color: white;
+  font-size: 56px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  letter-spacing: 2px;
+  display: flex;
+  text-align: left;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+
+header {
+  background:linear-gradient(to bottom,#000c02,#39254D);
+  display: flex;
+  
+
+}
+.container{
+  animation: opacity 2s;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+h5{
+    color: #d3762a;
+    top: 30px;
+    left: 20px;
+    letter-spacing: 1px;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+}
+nav {
+  float: right;
+  text-decoration: none;
+}
+
+nav ul {
+  margin: 5px;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 15px;
+  position: relative;
+  text-decoration: none;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: sans-serif;
+  
+}
+
+
+.dropdown-menu{
+  background-color: rgb(250, 219, 219);
+  border-radius: 3px;
+}
+.dropdown-item{
+  border-radius: 20px;
+}
+.Searchbar{
+  margin-bottom: 20px;
+  width: 100%;
+  background: transparent;
+  border: 3px solid #c77029;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+}
+.album-poster img{
+    width: 100%;
+    min-height: 250px;
+    animation: opacity 5s;
+}
+
+
+.album-poster{
+    position: relative;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: none;
+    
+    transition: all ease 0.4s;
+}
+.album-poster:hover{
+    box-shadow: 5px 5px 11px #ec8f50;
+    transform: scale(0.98) translateY(5px);
+}
+h3{
+    font-size: 34px;
+    margin-bottom: 34px;
+    text-align: center;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #c77029;
+    padding-bottom: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #c77029;
+}
+h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 700;
+    color: whitesmoke;
+}
+@keyframes opacity{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+#aplayer{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+    background:linear-gradient(to bottom,#c27474,#39254d );
+    transition: all ease 0.5s;
+}
+#aplayer.showPlayer{
+    bottom: 0;
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{
+
+    height: 4px;
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{
+    height: 4px;
+    background-color: white !important;
+}
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{
+    background-color: white !important;
+}
+
+.aplayer .aplayer-icon{
+    width: 20px;
+    height: 20px;
+
+}
+
+.aplayer .aplayer-info .aplayer-music{
+    margin-bottom: 5px;
+    color: #fff;
+}
+.main-footer {
+    height: 80px;
+
+    font-weight: bold;
+  }
+  
+  .main-footer .container {
+    position: relative;
+    justify-content: space-between; 
+    text-align: center;
+  }
+  span{
+    letter-spacing: 1px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #c77029;
+    margin-bottom: 10px;
+  }
+  .Copyright{
+    align-items: center;
+    
+  }
