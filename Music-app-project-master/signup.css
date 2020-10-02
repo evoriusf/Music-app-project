@@ -1,5 +1,10 @@
+* , *::before , *::after{
+    box-sizing: border-box;
+}
 body{
-    margin: 1150px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     overflow: hidden;
     font-family: sans-serif;
     background:linear-gradient(to bottom,#c27474,#39254d );
@@ -40,6 +45,7 @@ h1{
     left: -35px;
     transform: scale(1);
     margin-top: 27px;
+    transition: all ease 0.4s;
     margin-left: 15px;
     height: 25px;
     width: 25px;
@@ -97,35 +103,47 @@ h1{
     margin-left:15px; 
  
 }
-.createacc:hover{
-    color: #3C99DC;
-    font-weight: 700;
 
-}
 
 .login{
     width: 280px;
     position: absolute;
     top:50%;
+    transition: all ease 0.4s;
     left:50%;
     transform:translate(-50%,-50%);
     color:white;
+    animation: direction 2s;
+  
+}
+@keyframes direction{
+    0%{
+        transform: translateY(200%);
+    }
+    100%{
+     transform: translate(-50% , -50%);
+     
+    }
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .textbox{
     width:100%;
     overflow:hidden;
     font-size: 20px;
-    border-bottom: 1px solid;
+    transition: all ease 0.4s;
+    border-bottom: 1px solid white;
 }
 .textbox:hover{
     border-bottom: 1px solid #3C99DC;
 }
 
-.textbox i{
-    width:26px;
-    float:left;
-    text-align:center;
-}
 .textbox input{
     width: 100%;
     border:none;
@@ -133,8 +151,7 @@ h1{
     background:none;
     color:white;
     font-size: 18px;
-    width:80%;
-    float:left;
+  
     margin:0 10px;
 }
 .btn{
@@ -145,6 +162,7 @@ h1{
     color:white;
     padding:5px;
     cursor: pointer;
+    transition: all ease 0.4s;
     font-size:18px;
     margin-top: 20px;
 }
@@ -171,6 +189,7 @@ h1{
     left:10%;
     transform:translate(-10%,-10%);
     position :absolute;
+    animation: show 2s;
 
 }
 .brand-logo{
